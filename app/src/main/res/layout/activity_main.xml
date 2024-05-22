@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="20dp"
     tools:context=".MainActivity">
 
@@ -16,112 +16,123 @@
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-            android:id="@+id/b1"
-            android:layout_height="160dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/displayTv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/b2"
-            />
-        <Button
-            android:id="@+id/b2"
-            android:layout_height="160dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/displayTv"
-            app:layout_constraintStart_toEndOf="@id/b1"
-            app:layout_constraintEnd_toStartOf="@id/b3"
-            />
-        <Button
-            android:id="@+id/b3"
-            android:layout_height="160dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/displayTv"
-            app:layout_constraintStart_toEndOf="@id/b2"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+        android:id="@+id/b1"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        app:layout_constraintEnd_toStartOf="@id/b2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/displayTv" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+
+        android:textSize="50dp"
+        app:layout_constraintEnd_toStartOf="@id/b3"
+        app:layout_constraintStart_toEndOf="@id/b1"
+        app:layout_constraintTop_toBottomOf="@id/displayTv" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/displayTv" />
+
     <Button
         android:id="@+id/b4"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="50dp"
         app:layout_constraintEnd_toStartOf="@id/b5"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b1" />
+
     <Button
         android:id="@+id/b5"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b1"
-        app:layout_constraintStart_toEndOf="@id/b4"
+        android:textSize="50dp"
         app:layout_constraintEnd_toStartOf="@id/b6"
-        />
+        app:layout_constraintStart_toEndOf="@id/b4"
+        app:layout_constraintTop_toBottomOf="@id/b1" />
+
     <Button
         android:id="@+id/b6"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b1"
-        app:layout_constraintStart_toEndOf="@id/b2"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/b1" />
+
     <Button
         android:id="@+id/b7"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b4"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="50dp"
         app:layout_constraintEnd_toStartOf="@id/b8"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b4" />
+
     <Button
         android:id="@+id/b8"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b5"
-        app:layout_constraintStart_toEndOf="@id/b7"
+        android:textSize="50dp"
         app:layout_constraintEnd_toStartOf="@id/b9"
-        />
+        app:layout_constraintStart_toEndOf="@id/b7"
+        app:layout_constraintTop_toBottomOf="@id/b5" />
+
     <Button
         android:id="@+id/b9"
-        android:layout_height="160dp"
         android:layout_width="0dp"
+        android:layout_height="160dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b6"
-        app:layout_constraintStart_toEndOf="@id/b2"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/b6" />
+
     <Button
         android:id="@+id/bRest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="RESET"
-        android:textSize="30sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/b7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
